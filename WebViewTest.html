@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 </head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>ICSL Test</title>
+<title>DPCSL Test</title>
 <!--自适应手机分辨率-->
 <meta name='viewport' content='width=device-width, target-densitydpi=device-dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
 <style type="text/css">
@@ -16,7 +16,7 @@
 
 <script>
 function setStatusBarColor(){
-//window.NativeMethod.setStatusBarColor({"color":"#FF0000"});
+    //window.NativeMethod.setStatusBarColor({"color":"#FF0000"});
     let obj = {"color":"#FF0000"};
     window.bridge.call("NativeMethod.setStatusBarColor",JSON.stringify(obj));
 
@@ -24,8 +24,8 @@ function setStatusBarColor(){
 
 function openMap(){
     let map = {"flag":1,"dLat":"22.627598","dLon":"114.070873","dName":"目的地名称"};
-window.NativeMethod.openMap(JSON.stringify(map));
-   // window.bridge.call("NativeMethod.openMap",{"flag":1,"dLat":"22.627598","dLon":"114.070873","dName":"目的地名称"})
+    window.NativeMethod.openMap(JSON.stringify(map));
+    // window.bridge.call("NativeMethod.openMap",{"flag":1,"dLat":"22.627598","dLon":"114.070873","dName":"目的地名称"})
 }
 
 function getAT() {
