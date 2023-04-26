@@ -17,13 +17,15 @@
 <script>
 function setStatusBarColor(){
 //window.NativeMethod.setStatusBarColor({"color":"#FF0000"});
-    window.bridge.call("NativeMethod.setStatusBarColor",{"color":"#FF0000"});
+    let obj = {"color":"#FF0000"};
+    window.bridge.call("NativeMethod.setStatusBarColor",JSON.stringify(obj));
 
 }
 
 function openMap(){
-//window.NativeMethod.openMap({"flag":1,"dLat":"22.627598","dLon":"114.070873","dName":"目的地名称"});
-    window.bridge.call("NativeMethod.openMap",{"flag":1,"dLat":"22.627598","dLon":"114.070873","dName":"目的地名称"})
+    let map = {"flag":1,"dLat":"22.627598","dLon":"114.070873","dName":"目的地名称"};
+window.NativeMethod.openMap(JSON.stringify(map));
+   // window.bridge.call("NativeMethod.openMap",{"flag":1,"dLat":"22.627598","dLon":"114.070873","dName":"目的地名称"})
 }
 
 function getAT() {
