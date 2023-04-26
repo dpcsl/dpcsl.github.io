@@ -20,6 +20,10 @@ window.NativeMethod.setStatusBarColor({"color":"#FF0000"});
 
 }
 
+function openMap(){
+window.NativeMethod.openMap({"flag":1,"dLat":"22.627598","dLon":"114.070873","dName":"目的地名称"})
+}
+
 function getAT() {
     //document.write(window.vmallapp.getAccessTokenFromCache());
     alert(window.fansJSInterface.getAccessTokenFromCache());
@@ -31,7 +35,8 @@ function jumpToTopicCreateCommon() {
 
 </script>
 <body>
-<p><button onclick-"setStatusBarColor()" class="contain">设置状态栏颜色</button></p>
+<p><button onclick="openMap()" class="contain">打开百度地图</button></p>
+<p><button onclick="setStatusBarColor()" class="contain">设置状态栏颜色</button></p>
 <p><button onclick="getAT()" class="contain">获取AT</button></p>
 <p><button onclick="jumpToTopicCreateCommon()" class="contain">跳转到普通发帖页</button></p>
 
