@@ -15,6 +15,11 @@
 </head>
 
 <script>
+    
+function callApp(){
+    window.NativeMethod.callApp();
+}
+    
 function setStatusBarColor(){
     //window.NativeMethod.setStatusBarColor({"color":"#FF0000"});
     let obj = {"color":"#FF0000"};
@@ -41,6 +46,7 @@ function jumpToTopicCreateCommon() {
 <script src="https://ccpc.test.huawei.com/h5/vconsole/vconsole.min.js"></script>
 <script>const vconsole = new VConsole();</script> 
 <body>
+<p><button onclick="callApp()" class="contain">test</button></p>
 <p><button onclick="openMap()" class="contain">打开百度地图</button></p>
 <p><button onclick="setStatusBarColor()" class="contain">设置状态栏颜色</button></p>
 <p><button onclick="getAT()" class="contain">获取AT</button></p>
